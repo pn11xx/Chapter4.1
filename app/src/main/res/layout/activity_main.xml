@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.planner.chapter41.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="391dp"
+        android:layout_height="495dp"
+        android:background="@android:color/darker_gray"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="16dp">
+
+
+        <Button
+            android:id="@+id/factorialButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/oddsButton"
+            android:layout_alignBottom="@+id/oddsButton"
+            android:layout_toLeftOf="@+id/oddsButton"
+            android:layout_toStartOf="@+id/oddsButton"
+            android:text="Factorial" />
+
+        <Button
+            android:id="@+id/oddsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
+            android:layout_centerHorizontal="true"
+            android:text="Odd Numbers" />
+
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/oddsButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/background_dark"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="0"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/fibonacciButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/oddsButton"
+            android:layout_alignBottom="@+id/oddsButton"
+            android:layout_toEndOf="@+id/oddsButton"
+            android:layout_toRightOf="@+id/oddsButton"
+            android:text="Fibonacci" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
